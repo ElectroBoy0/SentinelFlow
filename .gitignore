@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# C++ / Compiled Extensions
+*.so
+*.o
+build/
+
+# Large Model Files
+onnx_model/model.onnx
+
+# Baseline Data (auto-generated on-demand)
+baseline_data/
