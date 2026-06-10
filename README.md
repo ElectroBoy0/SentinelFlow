@@ -11,12 +11,12 @@ SentinelFlow is a modular, event-driven streaming pipeline designed to monitor m
 graph TD
     Ingestion[1. Ingestion Engine] -->|raw-text-stream| Redpanda[Redpanda Broker]
     Redpanda -->|raw text events| Inference[2. Inference Daemon]
-    Inference -->|C++ Preprocessing & ONNX Model| Telemetry[inference-telemetry]
-    Telemetry -->|embeddings & metadata| Observability[3. Observability Engine]
-    Observability -->|metrics| Prometheus[Prometheus & Grafana]
+    Inference -->|C++ Preprocessing and ONNX Model| Telemetry[inference-telemetry]
+    Telemetry -->|embeddings and metadata| Observability[3. Observability Engine]
+    Observability -->|metrics| Prometheus[Prometheus and Grafana]
     Observability -->|if Drift detected| Qdrant[4. Qdrant Vector DB]
     Qdrant -->|drifted samples| ActiveLearning[5. Active Learning Loop]
-    ActiveLearning -->|KMeans++ Core-sets| Ollama[(Local Ollama LLM)]
+    ActiveLearning -->|KMeans++ Core-sets| Ollama["Local Ollama LLM (Ollama)"]
     Ollama -->|Silver-Standard Labels| Training[Retraining Dataset]
 ```
 
