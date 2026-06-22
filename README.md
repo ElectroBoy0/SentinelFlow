@@ -1,4 +1,4 @@
-# SentinelFlow 🛡️
+# SentinelFlow 
 ### Real-Time ML Observability, Drift Detection, & Active Learning Pipeline
 
 SentinelFlow is a modular, event-driven streaming pipeline designed to monitor machine learning models in production, detect statistical feature drift, and dynamically trigger active learning feedback loops to self-heal the model.
