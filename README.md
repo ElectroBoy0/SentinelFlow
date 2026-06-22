@@ -5,7 +5,7 @@ SentinelFlow is a modular, event-driven streaming pipeline designed to monitor m
 
 ---
 
-## 🏗️ Architecture & Data Flow
+## Architecture & Data Flow
 
 ```mermaid
 graph TD
@@ -31,7 +31,7 @@ graph TD
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 ├── active_learning/
@@ -56,7 +56,7 @@ graph TD
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### Prerequisites
 * Docker & Docker Compose
@@ -115,7 +115,7 @@ python3 active_learning/main.py
 
 ---
 
-## 📈 Monitoring Dashboard
+## Monitoring Dashboard
 * **Prometheus metrics:** Available at `http://localhost:8000/metrics`.
 * **Grafana dashboard:** Accessible at `http://localhost:3000/` (default credentials: `admin / admin`). Connect Prometheus (`http://prometheus:9090`) to build visualizations for the following live gauges:
   - `drift_mmd_distance`: Maximum Mean Discrepancy metric.
